@@ -12,6 +12,8 @@ Group: Graphical desktop/KDE
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF5Auth)
 BuildRequires: cmake(KF5Activities)
+BuildRequires: cmake(KF5Emoticons)
+BuildRequires: cmake(KF5ItemModels)
 BuildRequires: cmake(KF5Plasma)
 BuildRequires: cmake(KF5PlasmaQuick)
 BuildRequires: cmake(KF5DocTools)
@@ -23,6 +25,13 @@ BuildRequires: cmake(KF5NotifyConfig)
 BuildRequires: cmake(KF5Attica)
 BuildRequires: cmake(KF5Wallet)
 BuildRequires: cmake(KF5Runner)
+BuildRequires: cmake(LibKWorkspace)
+BuildRequires: cmake(LibTaskManager)
+BuildRequires: cmake(KWinDBusInterface)
+BuildRequires: cmake(ScreenSaverDBusInterface)
+BuildRequires: cmake(KRunnerAppDBusInterface)
+BuildRequires: cmake(KSMServerDBusInterface)
+BuildRequires: cmake(PackageKitQt5)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Quick)
 BuildRequires: pkgconfig(Qt5QuickWidgets)
@@ -33,7 +42,7 @@ BuildRequires: pkgconfig(Qt5Test)
 BuildRequires: pkgconfig(Qt5Concurrent)
 
 %description
-An experimental Plasma sys tray.
+An experimental Plasma systray.
 
 %prep
 %setup -q
