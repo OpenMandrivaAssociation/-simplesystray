@@ -56,3 +56,9 @@ An experimental Plasma systray.
 %ninja_install -C build
 
 %files
+%dir %{_datadir}/plasma/plasmoids/org.kde.plasma.private.systemtray
+%dir %{_datadir}/plasma/plasmoids/org.kde.plasma.systemtray.experimental
+%{_libdir}/qt5/plugins/plasma/applets/org.kde.plasma.*.so
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.*.desktop
+%{_datadir}/plasma/plasmoids/org.kde.plasma.private.systemtray/*
+%{_datadir}/plasma/plasmoids/org.kde.plasma.systemtray.experimental/*
