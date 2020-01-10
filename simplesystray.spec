@@ -46,7 +46,7 @@ An experimental Plasma systray.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 %cmake_kde5
 
 %build
